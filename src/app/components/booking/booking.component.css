@@ -1,0 +1,98 @@
+.background-parallax {
+  background-image: url('https://i.pinimg.com/originals/31/30/3c/31303cc5089b0471492a542e6d5c3893.gif'); /* URL de tu GIF de fondo */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0; /* Ajusta el padding según tus necesidades */
+  position: relative;
+  z-index: 1;
+}
+
+.container2 {
+  text-align: center;
+  padding: 20px;
+  color: rgb(5, 5, 5); /* Asegura que el texto sea legible sobre la imagen de fondo */
+}
+
+h2, p {
+  color: white;
+}
+
+.hotel-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra */
+  transition: transform 0.2s; /* Añade transición para el efecto hover */
+  border-radius: 8px; /* Añade bordes redondeados */
+  margin: 10px; /* Añade margen alrededor de la tarjeta */
+}
+
+.hotel-card:hover {
+  transform: scale(1.05); /* Añade un ligero zoom al hacer hover */
+}
+
+.card-body {
+  padding: 15px; /* Añade padding a la tarjeta */
+}
+
+.precio {
+  color: #28a745; /* Cambia el color a un verde elegante */
+  font-weight: bold; /* Establece el texto en negrita */
+}
+
+.card-title2 {
+  font-size: 0.8em; /* Tamaño de fuente específico para los títulos de las tarjetas */
+}
+
+.card-container2 {
+  display: flex;
+  justify-content: center; /* Centra las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas */
+  padding: 10px 0;
+}
+
+.card2 {
+  background: rgba(240, 236, 236, 0.771);
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px; /* Espacio entre las tarjetas */
+  flex-shrink: 0;
+}
+
+.card2 img {
+  width: 100%; /* Asegurar que todas las imágenes tengan el mismo ancho */
+  height: 150px; /* Asegurar que todas las imágenes tengan el mismo alto */
+  object-fit: cover; /* Mantener la relación de aspecto de las imágenes */
+}
+
+.card-content2 {
+  color: rgb(17, 17, 17);
+  padding: 10px;
+  text-align: left;
+  font-size: 0.9em; /* Disminuir el tamaño de las letras dentro de las tarjetas */
+}
+
+.rating {
+  color: #4caf50;
+}
+
+.more-hotels {
+  display: block;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.more-hotels:hover {
+  text-decoration: underline;
+}
+
+.badge {
+  color: rgb(10, 10, 10);
+}
+
+.address{
+  color: rgb(10, 10, 10);
+}
+

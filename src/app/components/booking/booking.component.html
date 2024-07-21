@@ -1,0 +1,36 @@
+<!-- Esta sección representa la estructura principal de la página de booking -->
+<div class="background-parallax">
+  <div class="container2">
+    <h2><strong>Los hoteles más populares en las ciudades de Ecuador</strong></h2>
+    <p>A continuación se muestran las ciudades más populares para alojarse en Ecuador, disfruta de los mejores hoteles de la zona.</p>
+
+    <!-- Itera sobre cada ciudad en el arreglo 'cities' -->
+    <div *ngFor="let city of cities" class="city-section">
+      <h3>{{ city.name }}</h3>
+      <!-- Itera sobre cada hotel en la ciudad actual -->
+      <div class="card-container2">
+        <div class="card2 hotel-card" *ngFor="let hotel of city.hotels">
+          <img [src]="hotel.image" alt="{{ hotel.name }}" />
+          <div class="card-content2 card-body">
+            <p class="badge">{{ hotel.badge }}</p>
+            <h4 class="card-title2">{{ hotel.name }}</h4>
+            <p class="address">{{ hotel.address }}</p>
+            <p class="rating">
+              <span class="stars">★★★★★</span> ({{ hotel.rating }})
+            </p>
+            <p class="price precio">{{ hotel.price }}</p>
+            <!-- Botón para abrir el detalle del hotel, vinculado a 'openHotelDetails' -->
+            <button class="offer-button" (click)="openHotelDetails(hotel, $event)">Ver oferta</button>
+          </div>
+        </div>
+      </div>
+      <!-- Enlace para buscar más hoteles en la ciudad actual -->
+      <a href="#" class="more-hotels">Buscar hoteles en {{ city.name }}</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para mostrar los detalles del hotel seleccionado -->
+<div class="modal-overlay" *ngIf="isModalOpen" (click)="closeModal($event)">
+  <app-hotel-details [hotel]="selectedHotel" (close)="closeModal()"></app-hotel-details>
+</div>

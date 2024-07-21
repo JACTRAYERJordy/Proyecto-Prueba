@@ -1,0 +1,58 @@
+<div class="hero-section">
+  <img src="https://invoyager.com/wp-content/uploads/2019/01/Lugares-turisticos-del-Ecuador-780x470.jpg" alt="Dune Buggy" class="hero-image">
+  <div class="hero-text">
+    <h1>Descubre lo mejor de DreamStay</h1>
+    <h2>Cosas que hacer Lo mejor de lo mejor</h2>
+  </div>
+</div>
+
+<div class="filter-section">
+  <div class="dropdown">
+    <button (click)="toggleSelect()" class="dropdown-button">Ecuador</button>
+    <div *ngIf="showSelect" class="dropdown-content">
+      <button (click)="selectLocation('manta')">Manta</button>
+      <button (click)="selectLocation('puerto-lopez')">Puerto López</button>
+      <button (click)="selectLocation('montanita')">Montañita</button>
+      <button (click)="selectLocation('banos')">Baños</button>
+      <button (click)="selectLocation('galapagos')">Galápagos</button>
+    </div>
+  </div>
+  <button class="filter-button">Las mejores experiencias</button>
+  <button class="filter-button">Mejores atracciones</button>
+  <button class="filter-button">Parques acuáticos y de atracciones</button>
+</div>
+
+
+
+
+
+
+<div class="promo-section">
+  <h2>🌟 Descubre lo mejor de DreamStay: donde cada estancia es una experiencia excepcional. 🌟</h2>
+  <p>Viajeros de todos los tipos—entusiastas de la cultura, amantes de la buena comida y buscadores de aventuras—coinciden: DreamStay es el lugar ideal para tu próxima escapada. Con un sinfín de opiniones excelentes, hemos sido reconocidos por ofrecer un nivel de excelencia en cada detalle.</p>
+
+  <h3>🏨 ¿Por qué elegir DreamStay?</h3>
+  <ul>
+    <li>Hospitalidad sin igual: Un equipo dedicado a hacer de tu estancia una experiencia memorable.</li>
+    <li>Habitaciones cómodas y acogedoras: El descanso que mereces después de un día de exploración.</li>
+    <li>Ubicación inmejorable: A pasos de las principales atracciones de la zona.</li>
+  </ul>
+
+  <h2>✨ No te conformes con menos, elige lo mejor. Reserva tu estancia en DreamStay y vive momentos inolvidables! 🌈</h2>
+</div>
+
+<div class="experience-list">
+  <div class="experience-item" *ngFor="let experience of experiences">
+    <img [src]="experience.image" alt="{{experience.title}}" class="experience-image">
+    <div class="experience-details">
+      <h3>{{experience.title}}</h3>
+      <p>{{experience.location}}</p>
+      <p>{{experience.description}}</p>
+      <div class="experience-info">
+        <span>Duración: {{experience.duration}}</span>
+        <span>Edad: {{experience.age}}</span>
+        <span>Opiniones: {{experience.reviews}}</span>
+      </div>
+    </div>
+  </div>
+</div>

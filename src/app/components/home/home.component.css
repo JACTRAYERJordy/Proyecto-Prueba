@@ -1,0 +1,164 @@
+/* home.component.css */
+
+/* Banner Styles */
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 1050px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.banner-img {
+  width: 180%;
+  height: 450px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.banner-text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+}
+
+.banner h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1em;
+}
+
+.banner .btn {
+  margin-top: 10px;
+}
+
+/* Container Styles */
+.container {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.gallery-container h2 {
+  margin-top: 0;
+}
+
+/* Gallery Images */
+.gallery-container img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+/* Hotel Cards */
+.hotel-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.hotel-card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.precio {
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Info Container */
+.info-container {
+  margin-bottom: 20px;
+}
+
+.info-container img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+/* Destination Cards */
+.destino-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.destino-card:hover {
+  transform: scale(1.05);
+}
+
+/* Container2 */
+.container2 {
+  background: rgba(237, 232, 232, 0.955);
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-container2 {
+  background: rgba(237, 232, 232, 0.955);
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+  padding: 10px 0;
+}
+
+.card2 {
+  background: rgba(244, 240, 240, 0.981);
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 10px;
+  flex-shrink: 0;
+}
+
+.card2 img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content2 {
+  padding: 10px;
+  text-align: left;
+  font-size: 1.0em;
+}
+
+.rating {
+  color: #4caf50;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.more-tours {
+  display: block;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.more-tours:hover {
+  text-decoration: underline;
+}

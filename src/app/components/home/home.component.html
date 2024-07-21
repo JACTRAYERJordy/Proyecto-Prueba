@@ -1,0 +1,59 @@
+<div class="banner" style="margin-bottom: 20px;">
+  <img src="https://ecuadors.live/wp-content/uploads/2023/09/Header-Turismo-Ecuador-Lives-en-un-solo-clic-ecuador-turistico-ecuador-y-los-mejores-lugares-turisticos-para-visitar-y-viajar-a-ecuador-scaled.webp" alt="Banner" class="banner-img">
+
+  <div class="banner-text">
+    <h2>Visita los mejores hoteles de Ecuador</h2>
+    <p>Realiza actividades imprescindibles para tu próximo viaje y conoce lo mejor del Ecuador</p>
+    <button class="btn btn-primary" (click)="navigateToList()">Ver la lista</button>
+  </div>
+</div>
+
+<div class="container" style="margin-bottom: 20px;">
+  <div class="gallery-container">
+    <h2 class="text-center">Hoteles Disponibles</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-3" *ngFor="let hotel of hoteles">
+        <div class="hotel-card card mb-4">
+          <img [src]="hotel.img" [alt]="hotel.nombre" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ hotel.nombre }}</h5>
+            <p class="card-text">{{ hotel.descripcion }}</p>
+            <p class="precio">A partir de {{ hotel.precio }} € por noche</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="info-container" style="margin-bottom: 20px;">
+  <h2 class="mt-5 text-center">Los destinos más populares para tus próximas vacaciones</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-4" *ngFor="let destino of destinos">
+      <div class="destino-card card mb-4">
+        <img [src]="destino.img" [alt]="destino.nombre" class="card-img-top">
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ destino.nombre }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container2">
+  <h2>Aventuras de navegación increíbles</h2>
+  <p>Disfruta del verano desde el agua con un crucero en velero o catamarán al atardecer</p>
+  <div class="card-container2">
+    <div class="card2" *ngFor="let tour of tours">
+      <img [src]="tour.image" alt="{{ tour.title2 }}" />
+      <div class="card-content2">
+        <h6>{{ tour.title2 }}</h6>
+        <p class="rating">
+          <span class="stars">★★★★★</span> ({{ tour.reviews }})
+        </p>
+        <p class="price">a partir de {{ tour.price }} € por adulto</p>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="more-tours">Ver más tours</a>
+</div>

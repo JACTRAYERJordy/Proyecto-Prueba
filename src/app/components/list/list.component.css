@@ -1,0 +1,185 @@
+/* Sección hero */
+.hero-section {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.hero-image {
+  width: 82%;
+  height: 400px;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+}
+
+
+
+
+/* Sección de filtros */
+.filter-section {
+  display: flex;
+  justify-content: center; /* Centrar elementos horizontalmente */
+  align-items: center; /* Alinear elementos verticalmente */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 20px 0;
+}
+
+.dropdown {
+  position: relative;
+  margin-right: 20px; /* Espacio entre elementos */
+}
+
+.dropdown-button, .filter-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-right: 10px; /* Espacio entre botones */
+}
+
+.dropdown-button:hover, .filter-button:hover {
+  background-color: #45a049;
+  transform: scale(1.02);
+}
+
+.dropdown-content {
+  display: flex;
+  flex-wrap: wrap; /* Permitir envolver los botones */
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 5px;
+}
+
+.dropdown-content button {
+  padding: 12px;
+  border: none;
+  background: none;
+  color: #4CAF50;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  width: 100%; /* Ancho completo */
+  text-align: left; /* Alinear texto a la izquierda */
+}
+
+.dropdown-content button:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+
+
+/* Listado de experiencias */
+.experience-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.experience-item {
+  border: 1px solid #ddd;
+  margin: 10px;
+  width: 45%;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.experience-item:hover {
+  transform: scale(1.05);
+}
+
+.experience-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.experience-details {
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.experience-details h3 {
+  margin: 0;
+  color: #333;
+}
+
+.experience-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.experience-info span {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.promo-section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.promo-section h2 {
+  font-size: 1.8rem;
+  margin: 20px 0;
+  color: #333;
+}
+
+.promo-section p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.promo-section h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin: 15px 0;
+}
+
+.promo-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.promo-section li {
+  margin: 10px 0;
+}
