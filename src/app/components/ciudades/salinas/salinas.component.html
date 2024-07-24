@@ -1,0 +1,26 @@
+<!-- Esta sección representa la estructura principal de la página de Manta -->
+<div class="background-parallax">
+  <div class="main-container">
+    <div class="left-container">
+      <h2><strong>Los hoteles más populares en Manta</strong></h2>
+      <p>A continuación se muestran los hoteles más populares para alojarse en Manta, disfruta de los mejores hoteles de la zona.</p>
+
+      <!-- Itera sobre cada hotel en el arreglo 'hotels' de la ciudad de Manta -->
+      <div class="card-container2">
+        <div class="hotel-card" *ngFor="let hotel of cities[0].hotels" (click)="openHotelDetails(hotel)">
+          <img [src]="hotel.image" alt="{{ hotel.name }}" class="hotel-image"/>
+          <div class="hotel-info">
+            <h4>{{ hotel.name }}</h4>
+            <p class="address">{{ hotel.address }}</p>
+            <p class="rating">
+              <span class="stars">★★★★★</span> ({{ hotel.rating }})
+            </p>
+            <p class="price">{{ hotel.price }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+    </div>
+  </div>
+</div>

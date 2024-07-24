@@ -1,0 +1,106 @@
+.reservation-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1c1c1e;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.reservation-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  margin-right: 20px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.back-button:hover {
+  color: #7c4dff;
+}
+
+.reservation-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hotel-info, .pricing-info, .hotel-image {
+  flex: 1;
+  min-width: 300px;
+  background-color: #2c2c2e;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.hotel-info h3, .pricing-info h3 {
+  margin-top: 0;
+}
+
+.edit-button {
+  background: none;
+  border: none;
+  color: #7c4dff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.edit-button:hover {
+  color: #ffffff;
+}
+
+.pricing-info .price, .pricing-info .total-price {
+  float: right;
+}
+
+.info-icon {
+  font-size: 12px;
+  color: #666;
+  margin-left: 5px;
+}
+
+.payment-button {
+  margin-top: 20px;
+  background-color: #7c4dff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.payment-button:hover {
+  background-color: #6200ea;
+}
+
+.hotel-image img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.hotel-description {
+  margin-top: 10px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #6200ea;
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+}

@@ -6,23 +6,47 @@
 
     <!-- Mostrar imágenes existentes del hotel -->
     <div class="images">
-      <!-- Primera imagen grande -->
-      <img *ngIf="hotel.images.length > 0" [src]="hotel.images[0]" [alt]="hotel.name" class="main-image">
+      <!-- Imagen principal -->
+      <img *ngIf="hotel.images.length > 0" [src]="currentImage" [alt]="hotel.name" class="main-image">
 
-      <!-- Otras imágenes más pequeñas -->
+      <!-- Galería de miniaturas -->
       <div class="thumbnail-gallery">
-        <img *ngFor="let image of hotel.images.slice(1)" [src]="image" [alt]="hotel.name" class="thumbnail-image">
+        <img *ngFor="let image of hotel.images" [src]="image" [alt]="hotel.name"
+             class="thumbnail-image"
+             (click)="changeImage(image)">
       </div>
     </div>
-    <!-- Detalles del hotel -->
-    <h2>{{ hotel.name }}</h2>
-    <p class="rating">
-      <span class="stars">★★★★★</span> ({{ hotel.rating }})
-    </p>
-    <!-- Integración del componente AddInfoComponent para añadir información adicional -->
-    <app-add-info [hotel]="hotel" (infoAdded)="updateHotelInfo($event)" (closeEvent)="closeModal()"></app-add-info>
 
-    <!-- Botón de Reservar -->
-    <button (click)="makeReservation()">Reservar</button>
+    <!-- Detalles del hotel -->
+    <div class="hotel-header">
+      <h2>{{ hotel.name }}</h2>
+      <p class="rating">
+        <span class="stars">★★★★★</span> ({{ hotel.rating }})
+      </p>
+    </div>
+
+    <!-- Información adicional del hotel -->
+    <div class="hotel-info">
+      <div class="header left-align">
+        <p><i class="fas fa-map-marker-alt"></i> {{ hotel.address }} <a href="#">Ubicación excelente</a></p>
+      </div>
+      <div class="additional-info left-align">
+        <p><strong>Descripción:</strong> {{ hotel.description }}</p>
+        <p><strong>Por qué visitarnos:</strong> {{ hotel.whyVisit }}</p>
+      </div>
+    </div>
+
+     <!-- Precio del hotel -->
+     <div class="price-container">
+      <p class="price">{{ hotel.price }}</p>
+    </div>
   </div>
-</div>
+
+
+    <!-- Contenedor para precio y botón de reservar -->
+    <div class="reservation-container">
+      <p class="price">{{ hotel.price }}</p>
+      <button (click)="makeReservation()">Reservar</button>
+    </div>
+  </div>
+

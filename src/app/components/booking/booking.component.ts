@@ -24,7 +24,6 @@ export class BookingComponent {
             'https://vistalmar.ruta-del-sol-mejor-hoteles.com/data/Images/OriginalPhoto/8867/886781/886781353/image-manta-hotel-vistalmar-13.JPEG',
             'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/0e/d9/20/habitacion-matrimonial.jpg?w=700&h=-1&s=1',
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/217233370.jpg?k=47d4965145d26e8f9143a7e583aabbf61cdcf31cf5625d9dc69e5ec88b0ba94f&o=&hp=1',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/100457425.jpg?k=29c3e92ba88dfaa9d623d790d0e7f383f5ea8515c62bd68659ff9a70e3e77ca5&o=&hp=1',
             'https://vistalmar.ruta-del-sol-mejor-hoteles.com/data/Images/OriginalPhoto/6471/647161/647161671/image-manta-hotel-vistalmar-60.JPEG',
           ]
         },
@@ -39,9 +38,8 @@ export class BookingComponent {
           whyVisit: 'Experimente el lujo y el confort en el hotel más popular de la zona.',
           images: [
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK7qB12G5Xd_tYzM0t-_ZPOkwInOgPMfB4NQ&s',
-            'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/94/40/a6/photo2jpg.jpg?w=700&h=-1&s=1',
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwkWjqxXjY4lQgevgUQYObIzli6ZwTM3pLng&s',
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfQSm2A5wMmcGnFvonUhtWGbq6riQW_zaqWA&s',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/509226698.jpg?k=043bea1ff0d9343fa37c6ff0f91b90405d4cdec70212b6615da1da284f9ffc0d&o=&hp=1',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/54378854.jpg?k=4084ee7cdeb97629fd2735907577850904ec5afd54c8a56761da6d5c7d2f1961&o=&hp=1',
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/54378950.jpg?k=8b6167539b3fdc992d2eb97701e10933a880f0e72bcb2fa95572e79fd2d6acaa&o=&hp=1',
             'https://ec.viajandox.com/uploads/Hotel%20Poisedon_1.jpg',
           ]
@@ -56,7 +54,6 @@ export class BookingComponent {
           description: 'Con una ubicación privilegiada y vistas al mar, este hotel es ideal para unas vacaciones relajantes.',
           whyVisit: 'Relájese en un entorno tranquilo con vistas impresionantes del océano.',
           images: [
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/43698070.jpg?k=95651b5a81fe121bca700d21594e2ef1192e94c2e1a957689d2470cad49796dc&o=&hp=1',
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/43697636.jpg?k=ac28cc1da5b7d5fa439a45eb4fdf8d6c904963de60a905d9ce6db7ce4e993bef&o=&hp=1',
             'https://host.ruta-del-sol-mejor-hoteles.com/data/Images/OriginalPhoto/2058/205833/205833916/image-manta-host-hotel-56.JPEG',
             'https://images.trvl-media.com/lodging/16000000/15910000/15904400/15904308/155604dd.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium',
@@ -74,7 +71,6 @@ export class BookingComponent {
           description: 'Ubicado en el corazón de la ciudad, este hotel ofrece fácil acceso a todas las atracciones principales.',
           whyVisit: 'Explore la ciudad con facilidad desde este hotel excelentemente ubicado.',
           images: [
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/182622471.jpg?k=ca2fa4c9271a4e5f64bddea111d167e4589bbb6f6549062995f44f5f969137f0&o=&hp=1',
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/225823013.jpg?k=3fc37c42a7a27201198678d4b78b8674f69dd1eb156475280e57c286b4ab71aa&o=&hp=1',
             'https://santa-fe.ruta-del-sol-mejor-hoteles.com/data/Images/OriginalPhoto/7637/763752/763752457/image-manta-hotel-santa-fe-37.JPEG',
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/215517121.jpg?k=7a240c4406beae309d46f4e1789c9bcdcd043602cfa46b325d87909f90dac440&o=&hp=1',
@@ -99,7 +95,6 @@ export class BookingComponent {
           images: [
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/53973223.jpg?k=7c6a15a973bc87e046ff235aff269ad2d7645b5ad6e82cbb7d595ecb2223d6ce&o=&hp=1',
             'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/86/2e/1a/restaurant-sitting.jpg?w=700&h=-1&s=1',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/25330471.jpg?k=dc455679a2990a3ed0efae85f4b560f3ef49d949f30c2e0c4c2d3a29f7261f65&o=&hp=1',
             'https://x.cdrst.com/foto/hotel-sf/54084/granderesp/victor-hugo-hotel-habitacion-dd4f187.jpg',
             'https://centrodeviajesecuador.com/wp-content/uploads/2021/02/IMG_1857.jpg',
             'https://centrodeviajesecuador.com/wp-content/uploads/2021/02/IMAGEN-DE-PORTADA-5.jpg',
@@ -120,7 +115,6 @@ export class BookingComponent {
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/19360229.jpg?k=efae8c13f5a60d19e89d2dda4d0715f24ee3195f09028b5ef36f0b79c24e072a&o=&hp=1',
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/27983081.jpg?k=ccd54566183ae7ba3d884a9b458277b03fd94119b348c5bc014dce89a2edd1a5&o=&hp=1',
             'https://cf.bstatic.com/xdata/images/hotel/max500/19360215.jpg?k=c529fa35fa8d05d49f91c040a339cdd8703babd3ba285d7cc356e68fe58762cb&o=&hp=1',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/19312406.jpg?k=350571ce9bc8c149ebb47ef338cecdd0219d734bc0a884df77f73551a73fbee3&o=&hp=1',
           ]
         },
         {
@@ -138,7 +132,6 @@ export class BookingComponent {
             'https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_600,q_auto,w_600//hotelier-images/b4/37/4e12d87ba4101ab4edd64baf076901ae008db7529eb429427b6869141ce0.jpeg',
             'https://media-cdn.tripadvisor.com/media/photo-m/1280/0e/68/c0/cf/photo2jpg.jpg',
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/215858070.jpg?k=0e963111e119e0118d4dd82e0af2028e7a1c4ef69301681c46d8542b23586542&o=&hp=1',
-            'https://z.cdrst.com/foto/hotel-sf/9ceda/medianaresp/mantaraya-lodge-general-dd5a816.jpg',
           ]
         },
         {
@@ -155,7 +148,6 @@ export class BookingComponent {
             'https://media-cdn.tripadvisor.com/media/photo-s/25/0b/b0/a8/nuestra-sala-restaurante.jpg',
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/440052980.jpg?k=8084496e025f0ec7427c69f143dfa0de44c84758b0cfe6cc0c35360561a2f76e&o=&hp=1',
             'https://images.trvl-media.com/lodging/28000000/27180000/27173900/27173812/ed3fa552.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill',
-            'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/84/63/b0/img-20170608-130833-405.jpg?w=1100&h=-1&s=1',
             'https://images.trvl-media.com/lodging/28000000/27180000/27173900/27173812/ace8f321.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium',
           ]
         }
@@ -178,7 +170,6 @@ export class BookingComponent {
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/118813837.jpg?k=096d13bb8d9646251a364acefb3a0ab434b5f023e58a67296967392eab1f34da&o=&hp=1',
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo4xDVpJqS5aSl2mm4Da9C5jIE_z2K1XFm_A&s',
             'https://content.r9cdn.net/himg/1f/5a/75/expediav2-703925-4097005185-987853.jpg',
-            'https://casablanca-salinas.ruta-del-sol-mejor-hoteles.com/data/Images/OriginalPhoto/9818/981864/981864367/image-salinas-santa-elena-hotel-casablanca-salinas-8.JPEG',
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/43378417.jpg?k=ac9463218c00d23343b315f6fbe7b9b6c4d850cc0167d56dd3e278894e78e077&o=&hp=1',
           ]
         },
@@ -197,7 +188,6 @@ export class BookingComponent {
             'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/8d/32/33/blue-bay-resort-hotel.jpg?w=700&h=-1&s=1',
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/210193338.jpg?k=4ae5d4b0152ee8021c44abfe9d114a5b11b02b073bd6b005195aeda9b95cc614&o=&hp=1',
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/63247476.jpg?k=f6eb1b8291b88ead041ffb945702c1af2d45d02b7de5ede8f939e443409fa87f&o=&hp=1',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/275408059.jpg?k=71cbe8b5290e726035b428bba41ba5451a4cd80a15627aa30979f14410ba9a1a&o=&hp=1',
           ]
         },
         {
@@ -211,7 +201,6 @@ export class BookingComponent {
           whyVisit: 'Explore Salinas con facilidad desde este hotel bien ubicado.',
           images: [
             'https://francisco-iii.ruta-del-sol-mejor-hoteles.com/data/Photos/OriginalPhoto/1258/125831/125831142.JPEG',
-            'https://francisco-ii-hotel-ourense.hotelmix.es/data/Photos/OriginalPhoto/1769/176910/176910435/Hotel-Francisco-II-Ourense-Room.JPEG',
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/195420013.jpg?k=41c1c47719430ca5f5d72b0db4d94d0f1bed7d3dd123fdd3446d8cd84060782c&o=&hp=1',
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpWR1021zZ6aHwW91_eO9gCDyCW0Y5vmmGKw&s',
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/43288033.jpg?k=5a06d8d2728b39df93211d074e871864d1bbb8c38be03790ce4022bdd18b8113&o=&hp=1',
@@ -233,27 +222,29 @@ export class BookingComponent {
             'https://i.pinimg.com/736x/1a/67/b9/1a67b91fabe2c2b0487f5d36a110296e.jpg',
             'https://i.pinimg.com/736x/c1/49/89/c149892e19ce0f44d7db0f16f25a7129.jpg',
             'https://limg.hostelsclub.com/pics/31607/031607-1537749951.jpg',
-            'https://chescos-hostel.ruta-del-sol-mejor-hoteles.com/data/Images/OriginalPhoto/5235/523526/523526856/image-salinas-santa-elena-chescos-hostel-hotel-44.JPEG',
           ]
         }
       ]
     }
   ];
 
-  // Propiedades para gestionar el modal de detalles del hotel seleccionado
-  selectedHotel: any = null;
+  // Bandera para controlar la apertura del modal
   isModalOpen = false;
+  // Objeto para almacenar el hotel seleccionado
+  selectedHotel: any;
 
-  openHotelDetails(hotel: any, event: Event) {
-    event.stopPropagation();
+  // Método para abrir el modal con los detalles del hotel
+  openHotelDetails(hotel: any, event: Event): void {
     this.selectedHotel = hotel;
     this.isModalOpen = true;
+    event.stopPropagation(); // Evita que el evento de clic se propague al overlay
   }
 
-  closeModal(event?: Event) {
-    if (event && event.target && (event.target as HTMLElement).classList.contains('modal-overlay')) {
-      this.isModalOpen = false;
-      this.selectedHotel = null;
+  // Método para cerrar el modal
+  closeModal(event?: Event): void {
+    if (event) {
+      event.stopPropagation(); // Evita que el evento de clic se propague al overlay
     }
+    this.isModalOpen = false;
   }
 }

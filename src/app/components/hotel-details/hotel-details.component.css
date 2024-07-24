@@ -1,0 +1,101 @@
+/* hotel-details.component.css */
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  gap: 20px; /* Espacio entre los contenedores */
+  padding: 20px;
+  background-color: #f4f4f4; /* Fondo gris claro para el contenedor principal */
+  border-radius: 8px; /* Bordes redondeados para el contenedor principal */
+}
+
+/* Contenedor izquierdo para imágenes */
+.left-container, .right-container {
+  flex: 1; /* Ambos contenedores tienen el mismo tamaño */
+  padding: 20px;
+  background-color: #ffffff; /* Fondo blanco para claridad */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+}
+
+/* Contenedor de imágenes */
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Imagen principal */
+.images .main-image {
+  width: 100%;
+  max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+  margin-bottom: 15px;
+}
+
+/* Galería de miniaturas */
+.thumbnail-gallery {
+  display: flex;
+  gap: 10px; /* Espacio entre las miniaturas */
+  justify-content: center;
+}
+
+/* Miniaturas de imagen */
+.thumbnail-gallery .thumbnail-image {
+  width: 80px; /* Tamaño mejorado para las miniaturas */
+  height: 80px;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 4px; /* Bordes redondeados para las miniaturas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el cursor sobre las miniaturas */
+.thumbnail-gallery .thumbnail-image:hover {
+  transform: scale(1.1); /* Aumento de tamaño al pasar el cursor */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más prominente al hacer hover */
+}
+
+/* Sección de información adicional */
+.right-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Información del hotel */
+.right-container h2, .right-container p {
+  margin: 10px 0;
+}
+
+/* Sección de servicios */
+.services {
+  margin: 20px;
+}
+
+.service-category {
+  margin-bottom: 20px;
+}
+
+.service-category h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-list div {
+  width: 45%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+}
+

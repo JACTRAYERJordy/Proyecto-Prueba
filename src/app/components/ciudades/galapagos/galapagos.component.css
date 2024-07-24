@@ -1,0 +1,102 @@
+.background-parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0; /* Ajusta el padding según tus necesidades */
+  position: relative;
+  z-index: 1;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between; /* Distribuir espacio entre los contenedores */
+  padding: 0 20px; /* Ajusta el padding según tus necesidades */
+}
+
+.left-container, .right-container {
+  width: 48%; /* Ajusta el ancho de los contenedores */
+}
+
+.left-container {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.city-section {
+  margin-bottom: 30px;
+}
+
+.hotel-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra */
+  transition: transform 0.2s; /* Añade transición para el efecto hover */
+}
+
+.hotel-card:hover {
+  transform: scale(1.05); /* Añade un ligero zoom al hacer hover */
+}
+
+.hotel-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.hotel-info {
+  padding: 15px;
+  flex: 1;
+}
+
+.hotel-info h4 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.address {
+  color: #555;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: #28a745; /* Cambia el color a un verde elegante */
+  font-weight: bold; /* Establece el texto en negrita */
+  margin-bottom: 10px;
+}
+
+.offer-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.offer-button:hover {
+  background-color: #0056b3;
+}
+
+.more-hotels {
+  display: block;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.more-hotels:hover {
+  text-decoration: underline;
+}

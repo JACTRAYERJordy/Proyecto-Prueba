@@ -10,12 +10,12 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
 }
 
 /* Contenido del modal */
 .modal-content {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
   margin: 2% auto;
   padding: 20px;
   border-radius: 10px;
@@ -24,8 +24,8 @@
   max-width: 800px;
   position: relative;
   animation: fadeIn 0.4s ease-out;
-  text-align: center; /* Alineación centrada */
-  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0; /* Eliminar espaciado entre letras */
 }
 
 /* Botón de cerrar */
@@ -43,7 +43,6 @@
 .close:hover,
 .close:focus {
   color: #000;
-  text-decoration: none;
 }
 
 /* Animación de desvanecimiento */
@@ -56,14 +55,6 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* Texto de ubicación */
-.location-text {
-  margin: 10px 0;
-  line-height: 1.6;
-  font-size: 16px;
-  color: #555;
 }
 
 /* Estilo de las imágenes */
@@ -125,18 +116,68 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Espacio superior para AddInfoComponent */
-app-add-info {
+/* Ajustar el espaciado entre calificación, ubicación y precio */
+.rating,
+.header p,
+.additional-info p {
+  margin: 20px 0;
+}
+
+/* Estilo del contenedor del nombre y la calificación del hotel */
+.hotel-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espacio entre el nombre y la calificación */
+  margin-bottom: 20px;
+}
+
+.hotel-info {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  letter-spacing: 0; /* Eliminar espaciado entre letras */
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.header a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Estilo de la información adicional */
+.additional-info p {
+  margin: 10px 0;
+  color: #444;
+  line-height: 1.7; /* Mejora la legibilidad del texto */
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff; /* Color del precio para destacarlo */
+}
+
+/* Contenedor para precio y botón de reservar */
+.reservation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espacio entre el precio y el botón */
   margin-top: 20px;
-  width: 100%;
 }
 
 /* Botón de Reservar */
 button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 10px 20px;
   background-color: #007bff;
   color: white;
   border: none;
@@ -150,35 +191,17 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* Ajuste del espacio en la clase header */
-.header p {
+/* Estilo de los textos generales */
+p, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   line-height: 1.6;
-  font-size: 16px;
 }
 
-/* Ajuste del espacio en la clase additional-info */
-.additional-info p {
-  margin: 10px 0;
-  line-height: 1.6;
-  font-size: 16px;
+:host {
+  letter-spacing: 0; /* Asegurarse de que no haya separación de letras */
 }
 
-/* Asegúrate de que todos los párrafos tengan el mismo margen y espaciado */
-p {
-  margin: 10px 0;
-  line-height: 1.6;
-  font-size: 16px;
-}
-
-/* Asegúrate de que todos los títulos tengan el mismo margen y espaciado */
-h2, h3, h4, h5, h6 {
-  margin: 20px 0 10px 0;
-  line-height: 1.2;
-}
-
-/* Asegúrate de que todos los textos en .modal-content tengan el mismo espaciado */
-.modal-content {
-  text-align: center; /* Alineación centrada */
-  line-height: 1.6;
+/* Estilo específico para el texto no centrado */
+.left-align {
+  text-align: left; /* Alineación a la izquierda */
 }

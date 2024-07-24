@@ -1,0 +1,76 @@
+<div class="hotel-details">
+  <!-- Encabezado de la Oferta -->
+  <div class="header">
+    <a href="#" class="back-link">Ofertas de hotel en Quito, Ecuador</a>
+    <div class="title">
+      <h1>{{ hotelName }}</h1>
+      <div class="rating">
+        <!-- Aquí puedes añadir más detalles si es necesario -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Imagen Principal -->
+  <div class="main-image">
+    <img *ngIf="hotelImages && hotelImages.length > 0" [src]="hotelImages[0]" alt="Imagen del hotel">
+  </div>
+
+  <!-- Sección de Galería de Imágenes -->
+  <div class="image-gallery">
+    <img *ngFor="let image of hotelImages" [src]="image" alt="Imagen del hotel" class="gallery-image">
+  </div>
+
+  <!-- Sección 'Por qué nos gusta' -->
+  <div class="why-we-like-it">
+    <h2>Por qué nos gusta</h2>
+    <p>Elegante hotel boutique con vistas panorámicas de la ciudad. Estilo clásico y lujoso en el corazón de Quito.</p>
+    <p>Ubicado cerca del Centro Histórico, declarado Patrimonio de la Humanidad por la UNESCO, con fácil acceso a museos y sitios culturales.</p>
+    <p>Disfruta de la gastronomía ecuatoriana en nuestro restaurante premiado, con platos tradicionales y contemporáneos.</p>
+  </div>
+
+  <!-- Información de Estancia -->
+  <div class="stay-info">
+    <h2>Tu estancia</h2>
+    <div class="dates">
+      <label for="check-in-date">Check-in</label>
+      <input
+        id="check-in-date"
+        type="date"
+        [(ngModel)]="checkInDate"
+        required
+      >
+      <label for="check-out-date">Check-out</label>
+      <input
+        id="check-out-date"
+        type="date"
+        [(ngModel)]="checkOutDate"
+        required
+      >
+    </div>
+    <button (click)="makeReservation()">Reserva ahora | 159 USD</button>
+  </div>
+
+  <!-- Sección de Servicios -->
+  <div class="services">
+    <h2>Servicios</h2>
+    <div class="service-list">
+      <div>
+        <i class="icon-wifi"></i>
+        <span>WiFi gratuito</span>
+      </div>
+      <div>
+        <i class="icon-gym"></i>
+        <span>Centro de fitness con equipo de cardio y pesas</span>
+      </div>
+      <div>
+        <i class="icon-pool"></i>
+        <span>Piscina interior climatizada</span>
+      </div>
+      <div>
+        <i class="icon-parking"></i>
+        <span>Estacionamiento gratuito</span>
+      </div>
+      <!-- Añade más servicios según sea necesario -->
+    </div>
+  </div>
+</div>

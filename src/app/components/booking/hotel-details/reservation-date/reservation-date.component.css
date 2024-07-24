@@ -1,0 +1,137 @@
+/* General */
+.hotel-details {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background: rgba(64, 63, 63, 0.895);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.back-link {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.title h1 {
+  font-size: 2.2em;
+  margin: 0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.main-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+/* Sección 'Por qué nos gusta' */
+.why-we-like-it {
+  margin-bottom: 30px;
+  background-color: rgba(65, 63, 63, 0.897);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.why-we-like-it h2 {
+  margin-top: 0;
+  font-size: 1.8em;
+}
+
+/* Galería de Imágenes */
+.image-gallery {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Información de Estancia */
+.stay-info {
+  background-color: rgba(65, 63, 63, 0.897);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dates {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.dates label {
+  font-size: 0.9em;
+}
+
+input[type="date"] {
+  background-color: rgba(65, 63, 63, 0.897);
+  border: 1px solid #555;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+button {
+  background-color: #800080;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #660066;
+}
+
+/* Sección de Servicios */
+.services {
+  background-color: rgba(65, 63, 63, 0.897);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.services h2 {
+  margin-top: 0;
+  font-size: 1.8em;
+}
+
+.services .service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.services .service-list div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.services .service-list i {
+  font-size: 1.5em;
+}

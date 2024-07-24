@@ -1,0 +1,76 @@
+<!-- hotel-details.component.html -->
+<div class="container">
+  <div class="left-container">
+    <!-- Nombre del hotel -->
+    <div class="hotel-name">
+      <h2>{{ hotel.name }}</h2>
+    </div>
+
+    <!-- Mostrar imágenes existentes del hotel -->
+    <div class="images">
+      <!-- Imagen principal -->
+      <img *ngIf="hotel.images.length > 0" [src]="currentImage" [alt]="hotel.name" class="main-image">
+
+      <!-- Galería de miniaturas -->
+      <div class="thumbnail-gallery">
+        <img *ngFor="let image of hotel.images" [src]="image" [alt]="hotel.name"
+             class="thumbnail-image"
+             (click)="changeImage(image)">
+      </div>
+    </div>
+
+    <!-- Descripción y Por qué visitar -->
+    <div class="hotel-info">
+      <div class="description">
+        <h2>Descripción</h2>
+        <p>{{ hotel.description }}</p>
+      </div>
+      <div class="why-visit">
+        <h2>Por qué visitarnos</h2>
+        <p>{{ hotel.whyVisit }}</p>
+      </div>
+
+      <!-- Precio del hotel y botón de reservar -->
+      <div class="price-container">
+        <p class="price">{{ hotel.price }}</p>
+        <button class="reserve-button" (click)="makeReservation()">Reservar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-container">
+    <div class="services">
+      <h2>Servicios</h2>
+
+      <div class="service-category">
+        <h3>The Hotel</h3>
+        <div class="service-list">
+          <div *ngFor="let service of hotelServices">
+            <i class="icon" [ngClass]="service.icon"></i>
+            <span>{{ service.text }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-category">
+        <h3>The Room</h3>
+        <div class="service-list">
+          <div *ngFor="let service of roomServices">
+            <i class="icon" [ngClass]="service.icon"></i>
+            <span>{{ service.text }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-category">
+        <h3>The Food & Drink</h3>
+        <div class="service-list">
+          <div *ngFor="let service of foodServices">
+            <i class="icon" [ngClass]="service.icon"></i>
+            <span>{{ service.text }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<!-- Simplificado hotel-details.component.html -->
+<div class="hotel-details">
+  <!-- Imagen Principal -->
+  <div class="main-image">
+    <img *ngIf="hotelImages && hotelImages.length > 0" [src]="hotelImages[0]" alt="Imagen del hotel">
+  </div>
+
+  <!-- Información de Estancia -->
+  <div class="stay-info">
+    <h2>Tu estancia</h2>
+    <div class="dates">
+      <label for="check-in-date">Check-in</label>
+      <input
+        id="check-in-date"
+        type="date"
+        [(ngModel)]="checkInDate"
+        required
+      >
+      <label for="check-out-date">Check-out</label>
+      <input
+        id="check-out-date"
+        type="date"
+        [(ngModel)]="checkOutDate"
+        required
+      >
+    </div>
+    <button (click)="makeReservation()">Reserva ahora | 159 USD</button>
+  </div>
